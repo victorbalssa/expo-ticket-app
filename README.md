@@ -67,7 +67,6 @@ expo start
 ## 📖 Docs
 
 - [Contributing to this project](documentation/contributing.md)
-- [Understanding the file structure](documentation/file-structure.md)
+- [Understanding the file structure](documentation/file.md)
 - [Deploy the app](documentation/deploy.md)
-- [React Native Starter Kit (Expo) / Boilerplate](https://github.com/mcnamee/react-native-expo-starter-kit)
-
+- Thank you to this Boilerplate [React Native Starter Kit (Expo) / Boilerplate](https://github.com/mcnamee/react-native-expo-starter-kit)
