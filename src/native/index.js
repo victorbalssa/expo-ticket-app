@@ -7,7 +7,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { Router } from 'react-native-router-flux';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import { LogBox, Image } from 'react-native';
-import { Root, StyleProvider } from 'native-base';
+import { Root } from 'native-base';
 import AnimatedSplash from 'react-native-animated-splash-screen';
 
 import theme from '../constants/colors';
@@ -79,11 +79,9 @@ export default class App extends React.Component {
                             loading={<H2TLoading/>}
                             persistor={persistor}
                         >
-                            <StyleProvider>
-                                <Router>
-                                    {Routes}
-                                </Router>
-                            </StyleProvider>
+                            <Router>
+                                {Routes}
+                            </Router>
                         </PersistGate>
                     </Provider>
                 </Root>

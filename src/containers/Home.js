@@ -35,7 +35,6 @@ class Home extends Component {
         return (
             <Layout
                 error={error}
-                open={open}
                 member={member}
             />
         );
