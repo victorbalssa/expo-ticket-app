@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as Analytics from 'expo-firebase-analytics';
 
-import registerForPushNotificationsAsync from '../native/notification/GetExpoPushToken';
+import registerForPushNotificationsAsync from '../lib/GetExpoPushToken';
 
 class Home extends Component {
     static propTypes = {
