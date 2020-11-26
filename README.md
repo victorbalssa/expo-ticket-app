@@ -1,7 +1,7 @@
 
 <div align="center">
   <img src="https://repository-images.githubusercontent.com/315513657/9d256300-2f59-11eb-9701-6365533ea2b0" alt="Expo Ticket App preview" width="500" />
-  <img src="https://i.imgur.com/rLwjEbY.gif" height=245 />
+  <img src="https://i.imgur.com/rLwjEbY.gif" height=250 />
   <p></p>
   <h1>Expo Ticket App</h1>
   <p></p>
