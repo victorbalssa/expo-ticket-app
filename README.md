@@ -38,13 +38,16 @@ The project provides a lot of (Expo ready) libraries you may reach for, all read
 - __Data Caching / Offline__
     - [Redux Persist](https://github.com/rt2zz/redux-persist)
 - __UI Toolkit/s__
-    - [Native Base](https://nativebase.io/) for native mobile
+    - [Native Base](https://nativebase.io/)
 - __Code Linting__ with
-    - [Airbnb's JS Linting](https://github.com/airbnb/javascript) guidelines
-- __Deployment strategy__
-    - [Both manual and automated strategies](documentation/deploy.md)
+    - [lgtm project](https://lgtm.com/projects/g/victorbalssa/expo-ticket-app/latest/files/?sort=name&dir=ASC&mode=heatmap)
+    - [Airbnb's Linting](https://github.com/airbnb/javascript) guidelines
+- __Deploying to App Stores__
+    - [Deploy](documentation/deploy.md)
 - __Splash Screen + Assets__
     - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
+- __Backend__
+    - [Firebase](http://firebase.google.com/)
 
 ---
 
