@@ -14,44 +14,56 @@
 ![stars](https://img.shields.io/github/stars/victorbalssa/expo-ticket-app?style=for-the-badge)
 
   </sup>
-  <br />
-  <p align="center">
-    <a href="#-intro"><b>What is this?</b></a>
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="#-getting-started"><b>Usage</b></a>
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="#-docs"><b>Docs</b></a>
-  </p>
-  <br />
 </div>
 
 
-## 👊🏻 Intro
+---
 
-The project provides a lot of (Expo ready) libraries you may reach for, all ready to go. Specifically:
 
-- __Routing and navigation__
-    - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) for native mobile navigation
-- __Flux architecture__
-    - [Redux](https://redux.js.org/docs/introduction/)
-    - Redux Wrapper: [Rematch](https://github.com/rematch/rematch)
-- __Data Caching / Offline__
-    - [Redux Persist](https://github.com/rt2zz/redux-persist)
-- __UI Toolkit/s__
-    - [Native Base](https://nativebase.io/)
-- __Code Linting__ with
-    - [lgtm project](https://lgtm.com/projects/g/victorbalssa/expo-ticket-app/latest/files/?sort=name&dir=ASC&mode=heatmap)
-    - [Airbnb's Linting](https://github.com/airbnb/javascript) guidelines
-- __Deploying to App Stores__
-    - [Deploy](documentation/deploy.md)
-- __Splash Screen + Assets__
-    - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
-- __Backend__
-    - [Firebase](http://firebase.google.com/)
+### 🎙 Introduction
+
+The project provides a lot of libraries you may reach for, all ready to go.
+It's designed to be a boilerplate to future applications including features like :
+
+__User Accounts__ - __Custom Selling Plateform__  - __Translations__ - __QR codes__ - __Camera API__ - __Push Notifications__
+
+Feel free to add your's !
 
 ---
 
-## 🚀 Getting Started
+
+### 📡 Technologies
+
+- __Expo SDK 39__ Framework and a Platform for universal React applications.  [docs.expo.io](https://docs.expo.io/)
+
+- __Routing and navigation__ [github link](https://github.com/aksonov/react-native-router-flux) wrapper of React Navigation V4 for native mobile navigation
+
+- __Flux architecture__
+    - Well known Redux [https://redux.js.org/docs/introduction/](https://redux.js.org/docs/introduction/)
+    - Redux Wrapper: Rematch, is Redux best practices without the boilerplate. No more action types, action creators, switch statements or thunks. [https://github.com/rematch/rematch](https://github.com/rematch/rematch)
+    - Rematch plugin: Loading, adds automated loading indicators for effects, so you don’t need to manage state like loading: true by yourself. [@rematch/loading](https://rematch.netlify.app/#/plugins/loading)
+- __Offline Data__
+    - Redux Persist [https://github.com/rt2zz/redux-persist](https://github.com/rt2zz/redux-persist)
+- __UX/UI Library__
+    - Native Base [https://nativebase.io/](https://nativebase.io/)
+- __Linting__
+    - lgtm project : [https://lgtm.com/projects/](https://lgtm.com/projects/g/victorbalssa/expo-ticket-app/latest/files/?sort=name&dir=ASC&mode=heatmap)
+    - Airbnb's Linting : [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript) guidelines
+- __Splash Screen + Assets__
+    - React Native Splash Screen : [https://github.com/crazycodeboy/react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)
+- __Firebase__
+    - [firebase.google.com](http://firebase.google.com/)
+    - Firebase Auth
+    - Realtime database
+    - Cloud Functions
+- __Sails__
+    - sails js [sailsjs.com](https://sailsjs.com/)
+    
+
+---
+
+
+### 🚀 Create your app
 
  - Install `eslint`, `prettier` and `editor config` plugins into your IDE
 
@@ -62,11 +74,11 @@ yarn install
 # Lauch expo
 expo start
 ```
----
+----
 
-## 📖 Docs
+### 📖 Docs
 
 - [Contributing to this project](documentation/contributing.md)
 - [Understanding the file structure](documentation/file.md)
 - [Deploy the app](documentation/deploy.md)
-- Thank you to this Boilerplate [React Native Starter Kit (Expo) / Boilerplate](https://github.com/mcnamee/react-native-expo-starter-kit)
+- [React Native Starter](https://github.com/mcnamee/react-native-expo-starter-kit)
