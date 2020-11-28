@@ -84,7 +84,7 @@ expo start
 
 ### 📖 Docs
 
-- [Contributing to this project](documentation/contributing.md)
+- [Contributing to this project](documentation/CONTRIBUTING.md)
 - [Understanding the file structure](documentation/file.md)
 - [Deploy the app](documentation/deploy.md)
-- [React Native Starter](https://github.com/mcnamee/react-native-expo-starter-kit)
+- [ReactNative.dev](https://reactnative.dev)
