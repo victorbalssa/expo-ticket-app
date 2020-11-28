@@ -7,8 +7,8 @@
   <p></p>
   <p></p>
     <div>
-        <a href="https://apps.apple.com/us/app/h2t/id1502288567"><img src="documentation/apple.svg" /></a>
-        <a href="https://play.google.com/store/apps/details?id=club.h2t.app"><img src="documentation/android.png" /></a>
+        <a href="https://apps.apple.com/us/app/h2t/id1502288567"><img src="documentation/apple.svg" style="margin: 10px;" /></a>
+        <a href="https://play.google.com/store/apps/details?id=club.h2t.app"><img src="documentation/android.png" height=60 width=150 /></a>
     </div>
   <sup>
 
