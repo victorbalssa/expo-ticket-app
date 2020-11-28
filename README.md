@@ -7,9 +7,10 @@
   <p></p>
   <p></p>
     <div>
-        <a href="https://apps.apple.com/us/app/h2t/id1502288567"><img src="documentation/apple.svg" style="margin: 10px;" /></a>
-        <a href="https://play.google.com/store/apps/details?id=club.h2t.app"><img src="documentation/android.png" height=60 width=150 /></a>
+        <a href="https://apps.apple.com/us/app/h2t/id1502288567"><img src="documentation/apple.svg" /></a>
+        <a href="https://play.google.com/store/apps/details?id=club.h2t.app"><img src="https://lh3.googleusercontent.com/qF9r3ZjtgG-qyHdmjecArtKiulz1gmwL_xl9R3_fzk6igSeoN0wYbJSKEX5d_fxJRwYZJpHbqcLB3i9atl-9dOfUl9an7U43TfZ9PtQ=s0" /></a>
     </div>
+    <p></p>
   <sup>
 
 ![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/victorbalssa/expo-ticket-app?style=for-the-badge)
