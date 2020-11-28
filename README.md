@@ -84,7 +84,7 @@ expo start
 
 ### 📖 Docs
 
-- [Contributing to this project](documentation/CONTRIBUTING.md)
+- [Contributing to this project](.github/CONTRIBUTING.md)
 - [Understanding the file structure](documentation/file.md)
 - [Deploy the app](documentation/deploy.md)
 - [ReactNative.dev](https://reactnative.dev)
