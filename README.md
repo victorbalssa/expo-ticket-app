@@ -5,6 +5,11 @@
   <p></p>
   <h1>Expo Ticket App</h1>
   <p></p>
+  <p></p>
+    <div>
+        <a href="https://apps.apple.com/us/app/h2t/id1502288567"><img src="documentation/apple.svg" /></a>
+        <a href="https://play.google.com/store/apps/details?id=club.h2t.app"><img src="documentation/android.svg" /></a>
+    </div>
   <sup>
 
 ![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/victorbalssa/expo-ticket-app?style=for-the-badge)
