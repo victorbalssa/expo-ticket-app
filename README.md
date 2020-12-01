@@ -62,9 +62,6 @@ Feel free to add your's !
     - Firebase Auth
     - Realtime database
     - Cloud Functions
-- __Sails__
-    - sails js [sailsjs.com](https://sailsjs.com/)
-    
 
 ---
 
