@@ -19,26 +19,17 @@ class Events extends Component {
     };
 
     state = {
-        error: null,
         card: {
             valid: false,
         },
     };
 
     componentDidMount = () => {
-        const { match } = this.props;
+        const { match, fetchEvents } = this.props;
 
         if (!match) {
-            this.fetchData();
+            fetchEvents();
         }
-    };
-
-    fetchData = () => {
-        const { fetchEvents } = this.props;
-
-        return fetchEvents()
-            .then(() => this.setState({ error: null }))
-            .catch(err => this.setState({ error: err }));
     };
 
     onCardChange = (form) => {
