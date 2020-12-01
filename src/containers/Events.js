@@ -58,8 +58,22 @@ class Events extends Component {
                 });
             })
             .catch(err => {
-                Toast.show({
-                    text: err.response.data && err.response.data.message ? i18n.t(err.response.data.message) : i18n.t('errors.default'),
+                if (err.message) {
+                    return Toast.show({
+                        text: err.message,
+                        position: 'top',
+                    });
+                }
+
+                if (err.response.data) {
+                    return Toast.show({
+                        text: err.response.data && err.response.data.message ? i18n.t(err.response.data.message) : i18n.t('errors.default'),
+                        position: 'top',
+                    });
+                }
+
+                return Toast.show({
+                    text: i18n.t('errors.default'),
                     position: 'top',
                 });
             });
@@ -67,7 +81,7 @@ class Events extends Component {
 
     render = () => {
         const { card } = this.state;
-        const { Layout, events, match, loading, member } = this.props;
+        const { Layout, events, match, loading, member, fetchEvents } = this.props;
         const id = (match && match.params && match.params.id) ? match.params.id : null;
 
         return (
@@ -76,7 +90,7 @@ class Events extends Component {
                 loading={loading}
                 events={events}
                 member={member}
-                reFetch={() => this.fetchData()}
+                reFetch={() => fetchEvents()}
                 onCardChange={this.onCardChange}
                 card={this.state.card}
                 buyDisabled={!card.valid}

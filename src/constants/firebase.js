@@ -3,5 +3,4 @@ export default {
   authDomain: '',
   databaseURL: '',
   projectId: '',
-  storageBucket: '',
 }

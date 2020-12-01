@@ -70,7 +70,6 @@ export default {
             } = formData;
 
             return new Promise(async (resolve, reject) => {
-                // Validation rules
                 if (!firstName) return reject({ code: 'missingFirstName' });
                 if (!lastName) return reject({ code: 'missingLastName' });
                 if (!email) return reject({ code: 'missingEmail' });

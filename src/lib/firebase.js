@@ -3,14 +3,14 @@ require("firebase/functions")
 import firebaseConfig from '../constants/firebase';
 
 const {
-  apiKey, authDomain, databaseURL, storageBucket, projectId
+  apiKey, authDomain, databaseURL, projectId
 } = firebaseConfig;
 
 let firebaseInitialized = false;
 
-if (apiKey && authDomain && databaseURL && storageBucket && projectId) {
+if (apiKey && authDomain && databaseURL && projectId) {
   FirebaseModule.initializeApp({
-    apiKey, authDomain, databaseURL, storageBucket, projectId
+    apiKey, authDomain, databaseURL, projectId
   });
 
   firebaseInitialized = true;
