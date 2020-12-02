@@ -28,6 +28,8 @@
 
 ### 🎙 Introduction
 
+Follow this medium story to learn how to use this repo => https://victorbalssa.medium.com/your-first-react-native-app-in-15-min-c3ae6d5685cb
+
 The project provides a lot of libraries you may reach for, all ready to go.
 It's designed to be a boilerplate to future applications including features like :
 
