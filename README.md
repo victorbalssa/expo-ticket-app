@@ -13,11 +13,13 @@
     <p></p>
   <sup>
 
-![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/victorbalssa/expo-ticket-app?style=for-the-badge)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/github/victorbalssa/expo-ticket-app?style=for-the-badge)](https://lgtm.com/projects/g/victorbalssa/expo-ticket-app/latest/files/?sort=name&dir=ASC&mode=heatmap)
 ![Total alerts](https://img.shields.io/lgtm/alerts/g/victorbalssa/expo-ticket-app?style=for-the-badge)
 ![size](https://img.shields.io/github/repo-size/victorbalssa/expo-ticket-app?style=for-the-badge)
 ![licence](https://img.shields.io/github/license/victorbalssa/expo-ticket-app?style=for-the-badge)
 ![stars](https://img.shields.io/github/stars/victorbalssa/expo-ticket-app?style=for-the-badge)
+[![sdk](https://img.shields.io/badge/SDK-39.0.0-blue?style=for-the-badge)](https://www.npmjs.com/package/expo)
+[![sdk](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
   </sup>
 </div>
