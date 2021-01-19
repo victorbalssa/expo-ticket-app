@@ -18,7 +18,7 @@
 ![size](https://img.shields.io/github/repo-size/victorbalssa/expo-ticket-app?style=for-the-badge)
 ![licence](https://img.shields.io/github/license/victorbalssa/expo-ticket-app?style=for-the-badge)
 ![stars](https://img.shields.io/github/stars/victorbalssa/expo-ticket-app?style=for-the-badge)
-[![sdk](https://img.shields.io/badge/SDK-39.0.0-blue?style=for-the-badge)](https://www.npmjs.com/package/expo)
+[![sdk](https://img.shields.io/badge/SDK-40.0.1-blue?style=for-the-badge)](https://www.npmjs.com/package/expo)
 [![sdk](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
   </sup>
@@ -44,7 +44,7 @@ Feel free to add your's !
 
 ### 📡 Technologies
 
-- __Expo SDK 39__ Framework and a Platform for universal React applications.  [docs.expo.io](https://docs.expo.io/)
+- __Expo SDK 40__ Framework and a Platform for universal React applications.  [docs.expo.io](https://docs.expo.io/)
 
 - __Routing and navigation__ [github link](https://github.com/aksonov/react-native-router-flux) wrapper of React Navigation V4 for native mobile navigation
 
