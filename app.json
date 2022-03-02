@@ -9,7 +9,7 @@
             "android",
             "web"
         ],
-        "version": "1.3.0",
+        "version": "1.4.0",
         "orientation": "portrait",
         "icon": "./src/images/app-icon-h2t.png",
         "splash": {
@@ -61,19 +61,6 @@
             "androidMode": "default",
             "color": "#fc1055",
             "androidCollapsedTitle": "H2T"
-        },
-        "hooks": {
-            "postPublish": [
-                {
-                    "file": "sentry-expo/upload-sourcemaps",
-                    "config": {
-                        "organization": "",
-                        "project": "",
-                        "authToken": "",
-                        "setCommits": true
-                    }
-                }
-            ]
         }
     }
 }

@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Content, View, Text, Card, Left, Icon, Body, ListItem } from 'native-base';
+import {
+    Container, Content, View, Text, Card, Left, Icon, Body, ListItem
+} from 'native-base';
 import { Actions } from 'react-native-router-flux';
-import Spacer from '../UI/Spacer';
 import LottieView from 'lottie-react-native';
-import commonColor from '../../../constants/colors';
-import Loading from '../UI/Loading';
 import { StatusBar } from 'expo-status-bar';
+import Spacer from '../UI/Spacer';
+import Loading from '../UI/Loading';
 import TextI18n from '../UI/TextI18n';
+import commonColor from '../../../constants/colors';
 
 class Welcome extends React.Component {
     static propTypes = {
@@ -26,7 +28,7 @@ class Welcome extends React.Component {
         member: {},
     };
 
-    constructor (props) {
+    constructor(props) {
         super(props);
         this.state = {
             email: (props.member && props.member.email) ? props.member.email : '',
@@ -47,73 +49,77 @@ class Welcome extends React.Component {
             .catch(() => {});
     };
 
-    render () {
+    render() {
         const { loading } = this.props;
 
-        return (
-            <Container style={{ backgroundColor: commonColor.backgroundColor }}>
-                <StatusBar style="light"/>
-                <Content padder style={{ flex: 1 }}>
-                    <Spacer size={60}/>
-                    <Text style={{
-                        flex: 1,
-                        fontSize: 75,
-                        fontWeight: '400',
-                        fontFamily: 'Montserrat_Bold',
-                        color: 'white',
-                        textAlign: 'center',
-                    }}>
-                        {'H2T.'}
-                    </Text>
-                    <LottieView
-                        loop={true}
-                        autoPlay
-                        speed={1.5}
-                        style={{ width: '100%' }}
-                        source={require('../../../images/home')}
-                    />
-                    {!loading && <View>
-                        <Card style={{ backgroundColor: commonColor.brandStyle }}>
-                            <ListItem onPress={Actions.login} icon first>
-                                <Left>
-                                    <Icon name="log-in" style={{ color: 'white' }}/>
-                                </Left>
-                                <Body style={{ borderBottomWidth: 0 }}>
-                                    <TextI18n style={{ color: 'white', fontSize: 20 }}>
-                                        login.connect
-                                    </TextI18n>
-                                </Body>
-                            </ListItem>
-                            <ListItem onPress={Actions.signUp} icon>
-                                <Left>
-                                    <Icon name="add-circle" style={{ color: 'white' }}/>
-                                </Left>
-                                <Body style={{ borderBottomWidth: 0 }}>
-                                    <TextI18n style={{ color: 'white', fontSize: 20 }}>
-                                        login.signUp
-                                    </TextI18n>
-                                </Body>
-                            </ListItem>
-                        </Card>
-                        <TextI18n
-                            onPress={Actions.tabbar}
-                            style={{
-                                flex: 1,
-                                fontSize: 13,
-                                fontWeight: '400',
-                                fontFamily: 'Montserrat',
-                                paddingTop: 10,
-                                color: 'white',
-                                textAlign: 'center',
-                                textDecorationLine: 'underline',
-                            }}>
-                            login.withoutAccount
-                        </TextI18n>
-                    </View>}
-                    {loading && <Loading/>}
-                </Content>
-            </Container>
-        );
+        return (<Container style={{ backgroundColor: commonColor.backgroundColor }}>
+            <StatusBar style="light"/>
+            <Content padder style={{ flex: 1 }}>
+                <Spacer size={60}/>
+                <Text style={{
+                    flex: 1,
+                    fontSize: 55,
+                    fontWeight: '400',
+                    fontFamily: 'Montserrat_Bold',
+                    color: 'white',
+                    textAlign: 'center',
+                }}>
+                    {'Expo\nTicket App'}
+                </Text>
+                <LottieView
+                    loop={true}
+                    autoPlay
+                    speed={1.5}
+                    style={{ width: '100%' }}
+                    source={require('../../../images/home')}
+                />
+                {!loading && <View>
+                    <Card style={{ backgroundColor: commonColor.brandStyle }}>
+                        <ListItem onPress={Actions.login} icon first>
+                            <Left>
+                                <Icon name="log-in" style={{ color: 'white' }}/>
+                            </Left>
+                            <Body style={{ borderBottomWidth: 0 }}>
+                                <TextI18n style={{
+                                    color: 'white',
+                                    fontSize: 20
+                                }}>
+                                    login.connect
+                                </TextI18n>
+                            </Body>
+                        </ListItem>
+                        <ListItem onPress={Actions.signUp} icon>
+                            <Left>
+                                <Icon name="add-circle" style={{ color: 'white' }}/>
+                            </Left>
+                            <Body style={{ borderBottomWidth: 0 }}>
+                                <TextI18n style={{
+                                    color: 'white',
+                                    fontSize: 20
+                                }}>
+                                    login.signUp
+                                </TextI18n>
+                            </Body>
+                        </ListItem>
+                    </Card>
+                    <TextI18n
+                        onPress={Actions.tabbar}
+                        style={{
+                            flex: 1,
+                            fontSize: 13,
+                            fontWeight: '400',
+                            fontFamily: 'Montserrat',
+                            paddingTop: 10,
+                            color: 'white',
+                            textAlign: 'center',
+                            textDecorationLine: 'underline',
+                        }}>
+                        login.withoutAccount
+                    </TextI18n>
+                </View>}
+                {loading && <Loading/>}
+            </Content>
+        </Container>);
     }
 }
 

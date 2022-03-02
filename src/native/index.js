@@ -3,7 +3,6 @@ import * as Font from 'expo-font';
 import PropTypes from 'prop-types';
 import { Asset } from 'expo-asset';
 import { Provider } from 'react-redux';
-import * as SplashScreen from 'expo-splash-screen';
 import { Router } from 'react-native-router-flux';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import { LogBox, Image } from 'react-native';
@@ -20,7 +19,8 @@ const cacheImages = (images) => {
         if (typeof image === 'string') {
             return Image.prefetch(image);
         } else {
-            return Asset.fromModule(image).downloadAsync();
+            return Asset.fromModule(image)
+                .downloadAsync();
         }
     });
 };
@@ -35,13 +35,12 @@ export default class App extends React.Component {
         loading: true,
     };
 
-    componentDidMount () {
+    componentDidMount() {
         i18n.locale = this.props.store.getState().member.locale === 'fr' ? 'fr' : 'en';
-        SplashScreen.preventAutoHideAsync();
         this.loadAssets();
     }
 
-    loadAssets = async () => {
+    async loadAssets() {
         await cacheImages([
             require('../images/Events/blueBackgroung.png'),
             require('../images/Events/event.png'),
@@ -49,19 +48,18 @@ export default class App extends React.Component {
             require('../images/Events/account.jpg'),
             require('../images/Events/signIn.jpg'),
         ]);
-
-        Font
-            .loadAsync({
-                Montserrat: require('../images/Montserrat-Regular.ttf'),
-                Montserrat_Bold: require('../images/Montserrat-Bold.ttf'),
-            })
-            .then(() => SplashScreen.hideAsync())
-            .then(() => this.setState({ loading: false }))
-        ;
+        await Font.loadAsync({
+            Montserrat: require('../images/Montserrat-Regular.ttf'),
+            Montserrat_Bold: require('../images/Montserrat-Bold.ttf'),
+        });
+        this.setState({ loading: false });
     };
 
-    render () {
-        const { store, persistor } = this.props;
+    render() {
+        const {
+            store,
+            persistor
+        } = this.props;
         LogBox.ignoreAllLogs(true);
 
         return (
@@ -79,9 +77,11 @@ export default class App extends React.Component {
                             loading={<H2TLoading/>}
                             persistor={persistor}
                         >
-                            <Router>
-                                {Routes}
-                            </Router>
+                            {this.state.loading === false &&
+                                <Router>
+                                    {Routes}
+                                </Router>
+                            }
                         </PersistGate>
                     </Provider>
                 </Root>

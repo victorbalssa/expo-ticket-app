@@ -1,12 +1,12 @@
 import { init } from '@rematch/core';
 import createPersistPlugin, { getPersistor } from '@rematch/persist';
 import createLoadingPlugin from '@rematch/loading';
-import storage from 'redux-persist/es/storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as models from '../models';
 
 const persistPlugin = createPersistPlugin({
-    version: 2,
-    storage,
+    key: 'root',
+    storage: AsyncStorage,
     blacklist: [],
 });
 const loadingPlugin = createLoadingPlugin({});
