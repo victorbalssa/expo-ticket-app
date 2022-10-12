@@ -65,7 +65,7 @@
     "redux": "^4.1.2",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
-    "sentry-expo": "^4.0.0",
+    "sentry-expo": "^4.2.0",
     "sharp-cli": "^1.14.1",
     "slash": "^3.0.0"
   },
