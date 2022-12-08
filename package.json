@@ -53,7 +53,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-helmet": "^5.2.1",
-    "react-native": "0.64.3",
+    "react-native": "0.70.6",
     "react-native-animated-splash-screen": "^2.0.5",
     "react-native-credit-card-input": "^0.4.1",
     "react-native-modal": "^11.5.6",
@@ -78,6 +78,6 @@
     "eslint-plugin-react": "^7.18.0",
     "jest-expo": "^44.0.0",
     "node-sass": "^7.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "5.0.1"
   }
 }
